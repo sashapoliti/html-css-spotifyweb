@@ -1,0 +1,64 @@
+/* reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  ul {
+    list-style: none;
+  }
+  a {
+    text-decoration: none;
+  }
+
+/* general */
+body {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+.wrapper {
+    height: 100vh;
+    background-color: black;
+}
+.content {
+    height: calc(100vh - 90px);
+    width: 100%;
+    background-color: orange;
+}
+
+/* top bar */
+.top-bar {
+    background-color: rgba(0, 0, 0, 0.432);
+    height: 80px;
+    width: calc(100% - 200px);
+    position: fixed;
+    top: 0;
+    left: 200px;
+}
+
+/* side bar */
+#sidebar {
+    width: 200px;
+    background-color: green;
+}
+
+/* main */
+main {
+    width: calc(100% - 200px);
+    background-color: blue;
+    padding-top: 100px;
+    overflow-y: auto;
+}
+
+/* tool bar */
+#toolbar {
+    background-color: red;
+    height: 90px;
+}
+
+/* flex utility */
+.d-flex {
+    display: flex;
+}
