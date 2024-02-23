@@ -97,7 +97,7 @@ nav a:hover .green-line {
   display: block;
 }
 main section {
-  padding: 40px 20px;
+  padding: 25px 20px;
 }
 h2 {
   margin-bottom: 30px;
@@ -136,9 +136,13 @@ main .card .text-content {
 h4 {
   margin-bottom: 10px;
 }
-main span {
+main span,
+.subtitle {
   color: var(--color-text-subtitle-main);
   font-size: small;
+}
+main .subtitle {
+    margin: -20px 0 30px 0;
 }
 
 /* tool bar */
