@@ -15,50 +15,98 @@
 body {
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
-    font-weight: 400;
+    font-weight: bold;
     font-style: normal;
+    font-size: 1em;
+}
+:root {
+	--color-bg-main: #141922;
+	--color-text-standard: #ffffff;
+	--color-text-subtitle-main: #7b7e82;
+	--color-bg-sidebar: #000000;
+	--color-bg-toolbar: #282828;
+	--color-text-subtitle-bars: #717171;
+	--color-dark-line: #5a5a5a;
+	--color-light-line: #c1c1c1;
+	--color-details-green: #adff2f;
 }
 .wrapper {
     height: 100vh;
-    background-color: black;
 }
 .content {
     height: calc(100vh - 90px);
     width: 100%;
-    background-color: orange;
 }
 
 /* top bar */
 .top-bar {
-    background-color: rgba(0, 0, 0, 0.432);
-    height: 80px;
+    background-color: rgba(0, 0, 0, 0.555);
+    height: 90px;
     width: calc(100% - 200px);
     position: fixed;
     top: 0;
     left: 200px;
+    z-index: 10;
 }
 
 /* side bar */
 #sidebar {
     width: 200px;
-    background-color: green;
+    background-color: var(--color-bg-sidebar);
 }
 
 /* main */
 main {
     width: calc(100% - 200px);
-    background-color: blue;
+    background-color: var(--color-bg-main);
     padding-top: 100px;
     overflow-y: auto;
+}
+nav {
+    max-width: 650px;
+    margin: 0 auto;
+    font-size: 0.8rem;
+}
+nav a {
+    position: relative;
+    color: var(--color-text-subtitle-main);
+    padding: 5px 10px;
+}
+.green-line {
+    display: none;
+    width: 30px;
+    border-bottom: 2px solid var(--color-details-green);
+    position: absolute;
+    bottom: 0;
+    left: calc(50% - 15px);
+}
+nav a:hover {
+    color: var(--color-text-standard);
+    transition-duration: 0.5s;
+    transition-timing-function: linear;
+}
+nav a:hover .green-line {
+    display: block;
 }
 
 /* tool bar */
 #toolbar {
-    background-color: red;
+    background-color: var(--color-bg-toolbar);
     height: 90px;
+}
+
+/* text utility */
+.title {
+    text-transform: uppercase;
 }
 
 /* flex utility */
 .d-flex {
     display: flex;
+}
+.f-wrap {
+    flex-wrap: wrap;
+}
+.j-spacebetween {
+    justify-content: space-between;
 }
