@@ -1,0 +1,22 @@
+@media screen and (max-width: 992px) {
+  main .card {
+    width: calc(100% / 4 - 15px);
+  }
+}
+@media screen and (max-width: 768px) {
+  main .card {
+    width: calc(100% / 2 - 15px);
+  }
+}
+@media screen and (max-width: 576px) {
+  .top-bar {
+    width: calc(100% - 50px);
+    left: 50px;
+  }
+  #sidebar {
+    width: 50px;
+  }
+  main {
+    width: calc(100% - 50px);
+  }
+}
