@@ -132,7 +132,7 @@ h5 {
   color: var(--color-text-subtitle-bars);
 }
 .playlist ul {
-  height: 100%;
+  height: calc(100% - 90px);
   font-size: small;  
   overflow-y: auto;
 }
@@ -274,8 +274,43 @@ main .subtitle {
 /* tool bar */
 #toolbar {
   background-color: var(--color-bg-toolbar);
+  color: var(--color-text-standard);
   height: 90px;
   z-index: 3;
+}
+.album,
+.volume {
+  width: 30%;
+  max-width: 230px;
+}
+#toolbar img {
+  width: 40px;
+  aspect-ratio: 1 / 1;
+  margin: 10px;
+}
+#toolbar .album span a,
+#toolbar .album i {
+  color: var(--color-text-subtitle-main);
+}
+#toolbar .album span {
+  font-size: 0.6rem;
+}
+#toolbar .album h6 a {
+  font-size: 0.7rem;
+  color: var(--color-text-standard);
+}
+#toolbar .album h6 a:hover,
+#toolbar .album span a:hover {
+  text-decoration: underline;
+}
+#toolbar .album>div:last-child {
+  width: 18%;
+}
+#toolbar .album>div:last-child a:hover i,
+#toolbar .album span a:hover {
+  color: var(--color-text-standard);
+  transition-duration: 0.2s;
+  transition-timing-function: linear;
 }
 
 /* text utility */
