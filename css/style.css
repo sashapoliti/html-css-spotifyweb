@@ -28,6 +28,7 @@ body {
   --color-dark-line: #5a5a5a;
   --color-light-line: #c1c1c1;
   --color-details-green: #adff2f;
+  --color-transparency: #acff2f00;
 }
 img {
   display: block;
@@ -35,6 +36,7 @@ img {
 }
 .wrapper {
   height: 100vh;
+  min-width: 400px;
 }
 .content {
   height: calc(100vh - 90px);
@@ -45,11 +47,11 @@ img {
 .top-bar {
   background-color: rgba(0, 0, 0, 0.555);
   height: 90px;
-  width: calc(100% - 200px);
+  width: calc(100% - 230px);
   padding: 30px 40px;
   position: fixed;
   top: 0;
-  left: 200px;
+  left: 230px;
   z-index: 10;
 }
 .top-bar a {
@@ -68,10 +70,17 @@ img {
 /* side bar */
 #sidebar {
   width: 230px;
+  min-height: 480px;
   background-color: var(--color-bg-sidebar);
   color: var(--color-text-subtitle-bars);
   padding: 20px 20px 10px;
-  overflow: hidden;
+}
+.sidebar-top {
+  height: calc(100% - 80px);
+}
+.sidebar-bottom {
+  height: 80px;
+  background-color: var(--color-bg-sidebar);
 }
 #logo-big {
   width: 70%;
@@ -93,9 +102,8 @@ img {
   padding: 5px 10px 5px 5px;
 }
 .menu .green-line {
-  display: none;
   height: 35px;
-  border-left: 3px solid var(--color-details-green);
+  border-left: 3px solid var(--color-transparency);
   position: absolute;
   left: -20px;
   top: calc(50% - 35px / 2);
@@ -104,32 +112,64 @@ img {
 .menu a:hover .text,
 .playlist a:hover {
   filter: brightness(0) invert(1);
-  transition-duration: 0.3s;
+  transition-duration: 0.2s;
   transition-timing-function: linear;
 }
 .menu a:hover .green-line {
-  display: block;
+  border-color: var(--color-details-green);
+  transition-duration: 0.3s;
+  transition-timing-function: linear;
 }
 h5 {
   color: var(--color-text-standard);
-  margin-top: 20px;
+  margin: 20px 0 5px 0;
 }
-.playlist {
-  font-size: small;
-  margin: 5px 0;
+#sidebar .sidebar-top .playlist {
+  min-height: 0;
+  overflow: hidden;
 }
 .playlist a {
   color: var(--color-text-subtitle-bars);
 }
-.playlist li:not(.playlist li:first-child) {
+.playlist ul {
+  height: 100%;
+  font-size: small;  
+  overflow-y: auto;
+}
+.playlist li {
   padding: 10px 0;
 }
-.playlist li:first-child .text {
+.playlist .text {
   padding: 5px 10px;
   font-size: 0.9rem;
 }
 .playlist .icon {
   font-size: 2.5rem;
+}
+.sidebar-bottom .install a {
+  font-size: small;
+  color: var(--color-text-subtitle-main);
+}
+.sidebar-bottom .install a:hover {
+  color: var(--color-text-standard);
+  transition-duration: 0.2s;
+  transition-timing-function: linear;
+}
+.sidebar-bottom .gray-line {
+  width: 100%;
+  border-bottom: 1px solid var(--color-text-subtitle-main);
+  margin: 10px 0 15px 0;
+}
+.profile .icon {
+  background-color: var(--color-text-subtitle-main);
+}
+.profile .icon img {
+  width: 25px;
+  aspect-ratio: 1 / 1;
+}
+.profile .name h5 {
+  margin: 0;
+  padding: 5px 10px;
 }
 
 /* main */
@@ -155,20 +195,21 @@ nav a {
   padding: 5px 10px;
 }
 nav .green-line {
-  display: none;
   width: 30px;
-  border-bottom: 2px solid var(--color-details-green);
+  border-bottom: 2px solid var(--color-transparency);
   position: absolute;
   bottom: 0;
   left: calc(50% - 15px);
 }
 nav a:hover {
   color: var(--color-text-standard);
-  transition-duration: 0.5s;
+  transition-duration: 0.2s;
   transition-timing-function: linear;
 }
 nav a:hover .green-line {
-  display: block;
+  border-color: var(--color-details-green);
+  transition-duration: 0.3s;
+  transition-timing-function: linear;
 }
 main section {
   padding: 25px 20px;
@@ -195,14 +236,16 @@ main .card .img-content {
   cursor: pointer;
 }
 main .card .img-content i {
-  display: none;
+  color: var(--color-transparency);
   font-size: 60px;
   position: absolute;
   top: calc(50% - 61px / 2);
   left: calc(50% - 60px / 2);
 }
 main .card .img-content:hover i {
-  display: block;
+  color: var(--color-text-standard);
+  transition-duration: 0.2s;
+  transition-timing-function: linear;
 }
 main .card .img-content:hover img {
   filter: brightness(40%);
@@ -258,6 +301,9 @@ main .subtitle {
 }
 .j-spacebetween {
   justify-content: space-between;
+}
+.ac-start {
+  align-content: flex-start;
 }
 .ai-center {
   align-items: center;

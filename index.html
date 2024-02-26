@@ -27,15 +27,15 @@
             </div>
 
             <!-- side bar -->
-            <div id="sidebar" class="d-flex fd-column j-spacebetween">
-                <div>
+            <div id="sidebar" class="d-flex fd-column">
+                <div class="sidebar-top d-flex fd-column">
                     <a href="index.html"><img id="logo-big" src="img/logo.svg" alt="Logo - Spotify grande"></a>
+                    <a href="index.html"><img id="logo-small" src="img/logo-small.svg" alt="Logo - Spotify piccolo"></a>
                     <ul class="menu d-flex fd-column ai-flexstart">
                         <li>
                             <a class="d-flex ai-center" href="#">
                                 <div class="icon">
-                                <img id="logo-small" src="img/logo-small.svg" alt="Logo - Spotify piccolo">
-                                <img src="img/home.svg" alt="Icona - Home">
+                                    <img src="img/home.svg" alt="Icona - Home">
                                 </div>
                                 <div class="text">
                                     Home
@@ -66,39 +66,56 @@
                             </a>                        
                         </li>
                     </ul>
-                    <h5 class="title">Playlist</h5>
-                    <ul class="playlist d-flex fd-column ai-flexstart">
-                        <li>
-                            <a class="d-flex ai-center" href="#">
-                                <div class="icon"><i class="fa-solid fa-square-plus"></i></div>
-                                <div class="text">Crea Playlist</div>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">I tuoi brani preferiti</a>
-                        </li>
-                        <li>
-                            <a href="#">Love Ballads</a>
-                        </li>
-                        <li>
-                            <a href="#">This is Lady Gaga</a>
-                        </li>
-                        <li>
-                            <a href="#">Alone Again</a>
-                        </li>
-                        <li>
-                            <a href="#">Romantic Ballads</a>
-                        </li>
-                        <li>
-                            <a href="#">Sad Bops</a>
-                        </li>
-                        <li>
-                            <a href="#">This is Lana del Rey</a>
-                        </li>
-
-                    </ul>
+                    <div class="playlist">                        
+                        <h5 class="title">Playlist</h5>
+                                <a class="d-flex ai-center" href="#">
+                                    <div class="icon"><i class="fa-solid fa-square-plus"></i></div>
+                                    <div class="text">Crea Playlist</div>
+                                </a>
+                        <ul class="d-flex fd-column ai-flexstart">
+                            <li>
+                                <a href="#">I tuoi brani preferiti</a>
+                            </li>
+                            <li>
+                                <a href="#">Love Ballads</a>
+                            </li>
+                            <li>
+                                <a href="#">This is Lady Gaga</a>
+                            </li>
+                            <li>
+                                <a href="#">Alone Again</a>
+                            </li>
+                            <li>
+                                <a href="#">Romantic Ballads</a>
+                            </li>
+                            <li>
+                                <a href="#">Sad Bops</a>
+                            </li>
+                            <li>
+                                <a href="#">This is Lana del Rey</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-
+                <div class="sidebar-bottom d-flex fd-column j-end">
+                    <div class="install">
+                        <a href="#">
+                            <i class="fa-regular fa-circle-down"></i>
+                            <span>Installa app</span>
+                        </a>
+                    </div>
+                    <div class="gray-line"></div>
+                    <div class="profile d-flex fd-column ai-flexstart">
+                        <a class="d-flex ai-center" href="#">
+                            <div class="icon circle">
+                                <img src="img/profile.svg" alt="immagine - Profilo">
+                            </div>
+                            <div class="name">
+                                <h5>Sasha Politi</h5>
+                            </div>
+                        </a>
+                    </div>
+                </div>
             </div>
 
             <!-- main -->
