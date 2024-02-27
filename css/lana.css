@@ -81,28 +81,79 @@ main ul.wrap-button li:last-child a i:hover {
   transition-timing-function: linear;
 }
 main .best-songs {
-    padding: 5px 20px;
-    gap: 10px;
+  padding: 5px 20px;
+  gap: 20px;
 }
 main .best-songs .left {
-    width: calc(60% - 10px);
+  width: calc(60% - 20px);
 }
 main .best-songs .right {
-    width: calc(40% - 10px);
+  width: calc(40% - 20px);
+}
+main .table .row {
+  border-radius: 5px;
+  margin-bottom: 10px;
 }
 main .best-songs .left img {
-    width: 50px;
-    aspect-ratio: 1 / 1;
+  width: 50px;
+  aspect-ratio: 1 / 1;
 }
 main .best-songs .title-view {
-    width: 60%;
+  width: 60%;
 }
 main .best-songs .left span.order {
-    color: var(--color-light-line);
-    margin: 15px 25px;
+  position: relative;
+  min-width: 16px;
+  color: var(--color-light-line);
+  margin: 15px 25px;
+}
+main .best-songs .left span.order i {
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: var(--color-transparency);
 }
 main .best-songs .left a.title-track {
-    font-size: 0.9rem;
-    color: var(--color-light-line);
-    margin-left: 10px;
+  font-size: 0.9rem;
+  color: var(--color-light-line);
+  margin-left: 10px;
+}
+main .best-songs .left a.title-track:hover {
+  text-decoration: underline;
+}
+main .best-songs .duration {
+  padding: 0 5px;
+  width: 100%;
+  max-width: 100px;
+}
+main .best-songs .duration i {
+  color: var(--color-transparency);
+}
+main .table .row:hover {
+  background-color: #323e55;
+  transition-duration: 0.1s;
+  transition-timing-function: linear;
+}
+main .table .row:hover span.order i {
+  color: var(--color-text-subtitle-main);
+  transition-duration: 0.2s;
+  transition-timing-function: linear;
+}
+main .table .row:hover span.order span {
+  color: var(--color-transparency);
+}
+main .table .row:hover .duration i {
+  color: var(--color-text-subtitle-main);
+  transition-duration: 0.2s;
+  transition-timing-function: linear;
+}
+main .best-songs .duration a i:hover {
+  color: var(--color-light-line);
+  transition-duration: 0.2s;
+  transition-timing-function: linear;
+}
+main .best-songs .duration a:hover .duration a i {
+  color: var(--color-light-line);
+  transition-duration: 0.2s;
+  transition-timing-function: linear;
 }
