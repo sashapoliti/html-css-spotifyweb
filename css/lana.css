@@ -157,3 +157,16 @@ main .best-songs .duration a:hover .duration a i {
   transition-duration: 0.2s;
   transition-timing-function: linear;
 }
+main .right img{
+    width: 90px;
+    aspect-ratio: 1 / 1;
+}
+main .right h5 a{
+    color: var(--color-text-standard);
+}
+main .right>div>div:last-child {
+    margin: -5px 0 0 10px;
+}
+main .right>div>div:last-child a:hover {
+    text-decoration: underline;
+}
