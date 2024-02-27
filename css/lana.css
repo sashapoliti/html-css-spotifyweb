@@ -48,7 +48,7 @@ h1 {
 main ul.wrap-button {
   width: 100%;
   max-width: 250px;
-  padding: 30px 20px;
+  padding: 20px;
 }
 main ul.wrap-button li:first-child a {
   color: var(--color-details-green);
@@ -67,8 +67,8 @@ main ul.wrap-button li .button {
   border-radius: 50px;
 }
 main ul.wrap-button li .button:hover {
-    border-color: var(--color-text-standard);
-    transition-duration: 0.2s;
+  border-color: var(--color-text-standard);
+  transition-duration: 0.2s;
   transition-timing-function: linear;
 }
 main ul.wrap-button li:last-child a {
@@ -76,7 +76,33 @@ main ul.wrap-button li:last-child a {
   color: var(--color-text-subtitle-main);
 }
 main ul.wrap-button li:last-child a i:hover {
-    color: var(--color-text-standard);
-    transition-duration: 0.2s;
+  color: var(--color-text-standard);
+  transition-duration: 0.2s;
   transition-timing-function: linear;
+}
+main .best-songs {
+    padding: 5px 20px;
+    gap: 10px;
+}
+main .best-songs .left {
+    width: calc(60% - 10px);
+}
+main .best-songs .right {
+    width: calc(40% - 10px);
+}
+main .best-songs .left img {
+    width: 50px;
+    aspect-ratio: 1 / 1;
+}
+main .best-songs .title-view {
+    width: 60%;
+}
+main .best-songs .left span.order {
+    color: var(--color-light-line);
+    margin: 15px 25px;
+}
+main .best-songs .left a.title-track {
+    font-size: 0.9rem;
+    color: var(--color-light-line);
+    margin-left: 10px;
 }
