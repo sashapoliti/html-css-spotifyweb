@@ -244,7 +244,8 @@ main .card-wrapper {
   gap: 15px;
 }
 main .card {
-  width: calc(100% / 6 - 15px);
+  width: calc(100% / 6 - 15px);  
+  cursor: pointer;
 }
 main .card .img-content img {
   width: 100%;
@@ -256,7 +257,6 @@ main .card .img-content {
   aspect-ratio: 1 / 1;
   margin-bottom: 20px;
   position: relative;
-  cursor: pointer;
 }
 main .card .img-content i {
   color: var(--color-transparency);
@@ -265,12 +265,12 @@ main .card .img-content i {
   top: calc(50% - 61px / 2);
   left: calc(50% - 60px / 2);
 }
-main .card .img-content:hover i {
+main .card:hover i {
   color: var(--color-text-standard);
   transition-duration: 0.2s;
   transition-timing-function: linear;
 }
-main .card .img-content:hover img {
+main .card:hover img {
   filter: brightness(40%);
   transition-duration: 0.3s;
   transition-timing-function: linear;
