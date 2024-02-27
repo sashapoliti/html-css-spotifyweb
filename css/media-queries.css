@@ -2,6 +2,12 @@
   main .card {
     width: calc(100% / 4 - 15px);
   }
+  main .right {
+    display: none;
+  }
+  main .best-songs .left {
+    width: 100%;
+  }
 }
 @media screen and (max-width: 992px) {
   main .card {
@@ -15,6 +21,9 @@
   h1 {
     font-size: 4rem;
     margin-left: 0;
+  }
+  main .best-songs .left .table .row .title-view>div:last-child {
+    display: none;
   }
 }
 @media screen and (max-width: 576px) {
@@ -66,8 +75,11 @@
     display: none;
   }
   h1 {
-    font-size: 2.8rem;
+    font-size: 2.7rem;
     margin-left: 0;
+  }
+  main .best-songs .left .table .row .title-view span.order {
+    display: none;
   }
 }
 @media screen and (max-height: 230px) {
