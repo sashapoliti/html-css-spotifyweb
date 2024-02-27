@@ -1,0 +1,47 @@
+:root {
+    --color-bg-main: #141922;
+    --color-text-standard: #ffffff;
+    --color-text-subtitle-main: #7b7e82;
+    --color-bg-sidebar: #000000;
+    --color-bg-toolbar: #282828;
+    --color-text-subtitle-bars: #717171;
+    --color-dark-line: #5a5a5a;
+    --color-light-line: #c1c1c1;
+    --color-details-green: #adff2f;
+    --color-transparency: #acff2f00;
+  }
+/* main */
+main {
+    padding-top: 0;
+}
+#jumbotron {
+    height: 40%;
+    min-height: 250px;
+    background-image: url("../img/lana_profile.jpg");
+    background-size: cover;
+    background-position-y: 30%;
+    padding: 30px 20px;
+}
+h1 {
+    font-size: 6rem;
+    margin: -5px 0 10px -6px;
+}
+#jumbotron span {
+    color: var(--color-text-standard);
+}
+.fa-certificate {
+    position: relative;
+    font-size: 1.5rem;
+    color: #3D91F4;
+    margin-right: 5px;
+}
+.fa-check {
+    position: absolute;
+    font-size: 1rem;
+    color: var(--color-text-standard);
+    left: calc(50% - 7px);
+    top: calc(50% - 8px)
+}
+#jumbotron .info span:last-child {
+    font-size: 1rem;
+}

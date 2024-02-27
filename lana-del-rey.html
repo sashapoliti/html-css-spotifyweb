@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" sizes="32x32" type="image/png" href="https://open.spotifycdn.com/cdn/images/favicon32.b64ecc03.png">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/lana.css" />
+    <link rel="stylesheet" href="css/media-queries.css" />
+    <title>Spotify</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="content d-flex">
+
+            <!-- top bar -->
+            <div class="top-bar d-flex j-end ai-center">
+                <a class="title" href="#">Effettua l'upgrade</a>
+            </div>
+
+            <!-- side bar -->
+            <div id="sidebar" class="d-flex fd-column">
+                <div class="sidebar-top d-flex fd-column">
+                    <a href="index.html"><img id="logo-big" src="img/logo.svg" alt="Logo - Spotify grande"></a>
+                    <a href="index.html"><img id="logo-small" src="img/logo-small.svg" alt="Logo - Spotify piccolo"></a>
+                    <ul class="menu d-flex fd-column ai-flexstart">
+                        <li>
+                            <a class="d-flex ai-center" href="index.html">
+                                <div class="icon">
+                                    <img src="img/home.svg" alt="Icona - Home">
+                                </div>
+                                <div class="text">
+                                    Home
+                                </div>
+                                <div class="green-line"></div>
+                            </a>                        
+                        </li>
+                        <li>
+                            <a class="d-flex ai-center" href="#">
+                                <div class="icon">
+                                    <img src="img/search.svg" alt="Icona - Cerca">
+                                </div>
+                                <div class="text">
+                                    Cerca
+                                </div>
+                                <div class="green-line"></div>
+                            </a>                        
+                        </li>
+                        <li>
+                            <a class="d-flex ai-center" href="#">
+                                <div class="icon">
+                                    <img src="img/libreria.svg" alt="Icona - La tua libreria">
+                                </div>
+                                <div class="text">
+                                    La tua libreria
+                                </div>
+                                <div class="green-line"></div>
+                            </a>                        
+                        </li>
+                    </ul>
+                    <div class="playlist">                        
+                        <h5 class="title">Playlist</h5>
+                                <a class="d-flex ai-center" href="#">
+                                    <div class="icon"><i class="fa-solid fa-square-plus"></i></div>
+                                    <div class="text">Crea Playlist</div>
+                                </a>
+                        <ul class="d-flex fd-column ai-flexstart">
+                            <li>
+                                <a href="#">I tuoi brani preferiti</a>
+                            </li>
+                            <li>
+                                <a href="#">Love Ballads</a>
+                            </li>
+                            <li>
+                                <a href="#">This is Lady Gaga</a>
+                            </li>
+                            <li>
+                                <a href="#">Alone Again</a>
+                            </li>
+                            <li>
+                                <a href="#">Romantic Ballads</a>
+                            </li>
+                            <li>
+                                <a href="#">Sad Bops</a>
+                            </li>
+                            <li>
+                                <a href="#">This is Lana Del Rey</a>
+                            </li>
+                            <li>
+                                <a href="#">Lana Del Rey Complete </a>
+                            </li>
+                            <li>
+                                <a href="#">I love Lana Del Rey</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="sidebar-bottom d-flex fd-column j-end">
+                    <div class="install">
+                        <a href="#">
+                            <i class="fa-regular fa-circle-down"></i>
+                            <span>Installa app</span>
+                        </a>
+                    </div>
+                    <div class="gray-line"></div>
+                    <div class="profile d-flex fd-column ai-flexstart">
+                        <a class="d-flex ai-center" href="#">
+                            <div class="icon circle">
+                                <img src="img/profile.svg" alt="immagine - Profilo">
+                            </div>
+                            <div class="name">
+                                <h5>Sasha Politi</h5>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- main -->
+            <main>
+                <div id="jumbotron" class="d-flex ai-flexend">
+                    <div class="info">
+                        <span class="d-flex ai-center"><i class="fa-solid fa-certificate"><i class="fa-solid fa-check"></i></i> Artista verificato</span>
+                        <h1>Lana Del Rey</h1>
+                        <span>58.928.206 ascoltatori mensili</span>
+                    </div>
+                </div>
+            </main>
+        </div>
+
+        <!-- tool bar -->
+        <div id="toolbar" class="d-flex ai-center j-spacebetween">
+            <div class="album d-flex ai-center j-spacebetween">
+                <div class="d-flex ai-center">
+                    <div>
+                        <img src="img/youg.jpeg" alt="Immagine - Album in ascolto">
+                    </div>
+                    <div class="d-flex fd-column ai-flexstart">
+                        <h6><a href="#">Cherry</a></h6>
+                        <span><a href="lana-del-rey.html">Lana Del Rey</a></span>
+                    </div>
+                </div>
+                <div class="d-flex f-wrap j-spacebetween">
+                    <a href="#"><i class="fa-regular fa-heart"></i></a>
+                    <a href="#"><i class="fa-regular fa-folder"></i></a>
+                </div>
+            </div>
+            <div class="media d-flex fd-column ai-center">
+                <div class="d-flex ai-center j-spaceevenly">
+                    <i class="fa-solid fa-shuffle"></i>
+                    <i class="fa-solid fa-backward-step"></i>
+                    <i class="fa-regular fa-circle-play"></i>
+                    <i class="fa-solid fa-forward-step"></i>
+                    <i class="fa-solid fa-rotate-right"></i>
+                </div>
+                <div class="d-flex ai-center j-spacearound">
+                    <span>0:25</span>
+                    <div class="music-bar">
+                        <div class="music-status">
+                            <div class="music-thumb"></div>
+                        </div>
+                    </div>
+                    <span>4:35</span>
+                </div>
+            </div>
+            <div class="volume d-flex ai-center j-spacebetween">
+                <i class="fa-solid fa-list-ul"></i>
+                <i class="fa-solid fa-display"></i>
+                <i class="fa-solid fa-volume-high"></i>
+                <div class="volume-bar">
+                    <div class="volume-status">
+                        <div class="volume-thumb"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

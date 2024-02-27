@@ -276,6 +276,7 @@ main .card:hover img {
   transition-timing-function: linear;
 }
 main .card .text-content {
+  color: var(--color-text-standard);
   text-align: center;
 }
 h4 {
@@ -448,4 +449,7 @@ main .subtitle {
 }
 .ai-flexstart {
   align-items: flex-start;
+}
+.ai-flexend {
+  align-items: flex-end;
 }
