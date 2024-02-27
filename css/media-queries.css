@@ -1,6 +1,11 @@
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 1200px) {
   main .card {
     width: calc(100% / 4 - 15px);
+  }
+}
+@media screen and (max-width: 992px) {
+  main .card {
+    width: calc(100% / 3 - 15px);
   }
 }
 @media screen and (max-width: 768px) {
@@ -41,5 +46,24 @@
   }
   .sidebar-bottom .profile {
     margin: 20px 0 5px 0
+  }
+}
+@media screen and (max-width: 400px) {
+  main .card {
+    width: 100%;
+  }
+  .album>div:last-child {
+    display: none;
+  }
+  .volume {
+    justify-content: space-around;
+  }
+  .volume i:not(.fa-volume-high) {
+    display: none;
+  }
+}
+@media screen and (max-height: 230px) {
+  .top-bar {
+    display: none;
   }
 }

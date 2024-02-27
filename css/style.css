@@ -41,6 +41,7 @@ img {
 .content {
   height: calc(100vh - 90px);
   width: 100%;
+  overflow: hidden;
 }
 
 /* top bar */
@@ -274,7 +275,7 @@ main .subtitle {
 /* tool bar */
 #toolbar {
   background-color: var(--color-bg-toolbar);
-  color: var(--color-text-standard);
+  color: var(--color-light-line);
   height: 90px;
   z-index: 3;
 }
@@ -324,6 +325,7 @@ main .subtitle {
 }
 #toolbar .media>div:first-child {
   max-width: 300px;
+  color: var(--color-text-standard);
   font-size: 1rem;
 }
 #toolbar .media>div:first-child i {
