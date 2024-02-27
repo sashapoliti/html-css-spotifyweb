@@ -30,6 +30,28 @@ body {
   --color-details-green: #adff2f;
   --color-transparency: #acff2f00;
 }
+*::-webkit-scrollbar {
+  width: 10px;
+}
+*::-webkit-scrollbar-thumb {
+  background-color: var(--color-transparency);
+}
+.content:hover ::-webkit-scrollbar-thumb {
+  background-color: #5a5a5a70;
+  transition-duration: 0.3s;
+  transition-timing-function: linear;
+}
+*.content ::-webkit-scrollbar-thumb:hover {
+  background-color: #c1c1c170;
+  transition-duration: 0.3s;
+  transition-timing-function: linear;
+}
+*::-webkit-scrollbar-thumb:active,
+.content ::-webkit-scrollbar-thumb:active {
+  background-color: var(--color-light-line);
+  transition-duration: 0.3s;
+  transition-timing-function: linear;
+}
 img {
   display: block;
   width: 100%;
@@ -90,7 +112,7 @@ img {
 #logo-small {
   display: none;
 }
-.menu li{
+.menu li {
   padding: 5px 0;
   position: relative;
 }
@@ -134,7 +156,7 @@ h5 {
 }
 .playlist ul {
   height: calc(100% - 90px);
-  font-size: small;  
+  font-size: small;
   overflow-y: auto;
 }
 .playlist li {
@@ -305,10 +327,10 @@ main .subtitle {
 #toolbar .album span a:hover {
   text-decoration: underline;
 }
-#toolbar .album>div:last-child {
+#toolbar .album > div:last-child {
   width: 18%;
 }
-#toolbar .album>div:last-child a:hover i,
+#toolbar .album > div:last-child a:hover i,
 #toolbar .album span a:hover {
   color: var(--color-text-standard);
   transition-duration: 0.2s;
@@ -318,20 +340,20 @@ main .subtitle {
   width: calc(100% - 30% * 2);
   max-width: 550px;
 }
-#toolbar .media>div {
+#toolbar .media > div {
   padding: 0 10px;
   margin: 10px 0;
   width: 100%;
 }
-#toolbar .media>div:first-child {
+#toolbar .media > div:first-child {
   max-width: 300px;
   color: var(--color-text-standard);
   font-size: 1rem;
 }
-#toolbar .media>div:first-child i {
+#toolbar .media > div:first-child i {
   cursor: pointer;
 }
-#toolbar .media>div:first-child .fa-circle-play {
+#toolbar .media > div:first-child .fa-circle-play {
   font-size: 1.8rem;
 }
 #toolbar .media .fa-circle-play:hover {
@@ -387,7 +409,6 @@ main .subtitle {
   transition-duration: 0.2s;
   transition-timing-function: linear;
 }
-
 
 /* text utility */
 .title {
