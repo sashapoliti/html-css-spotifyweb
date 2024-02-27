@@ -27,7 +27,7 @@ body {
   --color-text-subtitle-bars: #717171;
   --color-dark-line: #5a5a5a;
   --color-light-line: #c1c1c1;
-  --color-details-green: #adff2f;
+  --color-details-green: #1cdf63;
   --color-transparency: #acff2f00;
 }
 *::-webkit-scrollbar {
@@ -244,7 +244,7 @@ main .card-wrapper {
   gap: 15px;
 }
 main .card {
-  width: calc(100% / 6 - 15px);  
+  width: calc(100% / 6 - 15px);
   cursor: pointer;
 }
 main .card .img-content img {
@@ -308,7 +308,7 @@ main .subtitle {
   max-width: 230px;
 }
 #toolbar img {
-  width: 40px;
+  width: 50px;
   aspect-ratio: 1 / 1;
   margin: 10px;
 }
